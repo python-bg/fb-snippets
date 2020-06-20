@@ -1,7 +1,7 @@
-# permutations without itertools.permutations 
+# get all combinations without itertools.combinations 
 
-def permutations(arr: list):
-	# count of permutations is 2^n 
+def all_combinations(arr: list):
+	# count of all_combinations is 2^n 
 	for i in range(2**len(arr)):
 		perm = list()
 		# match binary number with the array 
@@ -12,7 +12,7 @@ def permutations(arr: list):
 
 arr = ["apple", "orange", "banana"]
 
-for p in permutations(arr):
+for p in all_combinations(arr):
 	print(p)
 
 """
