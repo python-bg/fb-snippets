@@ -3,12 +3,12 @@
 def all_combinations(arr: list):
 	# count of all_combinations is 2^n 
 	for i in range(2**len(arr)):
-		perm = list()
+		comb = list()
 		# match binary number with the array 
 		for k, v in zip(bin(i)[2:].zfill(len(arr)), arr):
 			if int(k):
-				perm.append(v)
-		yield perm
+				comb.append(v)
+		yield comb
 
 arr = ["apple", "orange", "banana"]
 
